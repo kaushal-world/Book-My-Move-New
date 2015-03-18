@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="bg_div">
+        <div class="col-md-4">
+            <md-content md-theme="docs-dark" class="md-padding" layout-sm="column" style="font-size:1.0em">
+                <md-input-container class="md-docs-dark-theme">
+                    <label>from:</label>
+                    <input type="text" ng-autocomplete="result2" details="details2" options="options2" ng-model="from" Required/>
+                </md-input-container>
+                <md-input-container>
+                    <label>to:</label>
+                    <input type="text" ng-autocomplete="result3" details="details3" options="options3" ng-model="to" Required/>
+                </md-input-container>
+                <md-input-container>
+                    <label>Date:</label>
+                    <input ui-date ng-model="currentdate" min="currentdate" placeholder='MM/DD/YYY' Required/>
+                </md-input-container>    
+            </md-content>    
+        </div>
+        <div class="col-md-2">
+            <md-content md-theme="docs-dark" class="md-padding" layout-sm="column" style="font-size:1.1em">
+                <md-input-container>
+                    <label>zipcode:</label>
+                    <input placeholder="zip-code" ng-model="zipfrom" md-maxlength="6" minlength="6" Required/>
+                </md-input-container>
+                <md-input-container>
+                    <label>zipcode:</label>
+                    <input type="text" placeholder="zip-code" ng-model="zipto" md-maxlength="6" minlength="6" Required/>
+                </md-input-container>  
+            </md-content>
+        </div>
+    </div>
+</div>
