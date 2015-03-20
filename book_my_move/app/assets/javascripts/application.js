@@ -20,4 +20,6 @@
 //= require angular-aria/angular-aria
 //= require angular-ui-date/src/date.js
 //= require jquery-ui/jquery-ui.js
+//= require angular-ui-map/ui-map
+//= require angular-ui-utils/ui-utils
 //= require_tree .

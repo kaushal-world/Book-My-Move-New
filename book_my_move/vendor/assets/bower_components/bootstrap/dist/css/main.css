@@ -1,7 +1,13 @@
-
+#map-canvas { 
+	height: 370px;
+	margin-top: 40px;
+	margin-right: 20px;
+	border:2px solid;
+	border-color: #66AFE9;
+ }
 .bg_image
 {
-background: url("pattern2.png");
+background: url("page-background.png");
 }
 
 .header
