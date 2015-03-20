@@ -1,15 +1,29 @@
+<<<<<<< HEAD
 <div class="row" ng-init="mapService.initialize()">
+=======
+<div class="section section-breadcrumbs">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Theme Features</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<div class="row">
+>>>>>>> 188156748c618d978887286ef12bad6204220f49
     <div class="bg_div">
         <div class="col-md-5">
             <md-content md-theme="docs-dark" class="md-padding" layout-sm="column" style="font-size:1.0em">
                 <md-input-container class="md-docs-dark-theme">
                     <label>from:</label>
-                    <input type="text" options="options2" ng-model="mapService.initial_loc" ng-autocomplete="mapService.initial_loc" ngValue="mapService.initial_loc" autocomplete="on" ng-mouseenter="mapService.calcRoute()" ng-change="mapService.calcRoute()" Required/>
+                    <input type="text" options="options2" ng-model="mapService.initial_loc" ng-autocomplete="mapService.initial_loc" ng-mouseenter="mapService.calcRoute()" ng-change="mapService.calcRoute()" Required/>
                 </md-input-container>
                 
                 <md-input-container>
                     <label>to:</label>
-                    <input type="text" options="options3" ng-model="mapService.end_loc" ng-autocomplete="mapService.end_loc" ngValue="mapService.end_loc" autocomplete="on" ng-mouseenter="mapService.calcRoute()" ng-change="mapService.calcRoute()" required/>
+                    <input type="text" options="options2" ng-model="mapService.end_loc" ng-autocomplete="mapService.end_loc" ng-mouseenter="mapService.calcRoute()" ng-change="mapService.calcRoute()" required/>
                 </md-input-container>
                 <md-input-container>
                     <label>Date:</label>
@@ -32,7 +46,8 @@
         </div>
         <div class="col-md-5">
             <div id="map-canvas"></div>
-            <b ng-cloak>Total Distance: {{mapService.distance}}</b>
+            <b ng-cloak>Total Distance: {{distance}}</b>
+            <b ng-cloak>Total Distance: {{mapService.end_loc}}</b>
         </div>
     </div>
 </div>

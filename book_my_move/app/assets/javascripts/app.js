@@ -32,8 +32,8 @@ bookmymove.service('mapService',['$rootScope', function($rootScope) {
     this.directionsDisplay;
     this.directionsService = new google.maps.DirectionsService();
     this.map;
-    this.initial_loc = '';
-    this.end_loc = '';
+    this.initial_loc = 'demo text for angular material to work with google places in chrome';
+    this.end_loc = 'demo text for angular material to work with google places in chrome';
     this.distance = '';
     var km = '';
     //var currentDate = new Date();
@@ -146,7 +146,7 @@ bookmymove.controller('MapCtrl', ['$scope','mapService', function($scope,mapServ
     $scope.$watch('mapService',function(){
       mapService = $scope.mapService;
     });
-    $scope.distance = mapService.distance;
+    $scope.distance = $scope.mapService.distance;
     console.info($scope.distance)
     $scope.currentdate = new Date();
 }]);
