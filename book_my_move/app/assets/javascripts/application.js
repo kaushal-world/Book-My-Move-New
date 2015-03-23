@@ -21,5 +21,7 @@
 //= require angular-ui-date/src/date.js
 //= require jquery-ui/jquery-ui.js
 //= require angular-ui-map/ui-map
+//= require angular-ui-bootstrap/src/datepicker/datepicker
 //= require angular-ui-utils/ui-utils
+//= require angular-ui-bootstrap/src/dateparser/dateparser
 //= require_tree .

@@ -18,16 +18,16 @@
             <md-content md-theme="docs-dark" class="md-padding" layout-sm="column" style="font-size:1.0em">
                 <md-input-container class="md-docs-dark-theme">
                     <label>from:</label>
-                    <input type="text" options="options2" ng-model="mapService.initial_loc" ng-autocomplete="mapService.initial_loc" ng-mouseenter="mapService.calcRoute()" ng-change="mapService.calcRoute()" Required/>
+                    <input type="text" options="options2" ng-model="mapService.initial_loc" ng-autocomplete="mapService.initial_loc" ng-model-options="modelOptions" ng-mouseenter="mapService.calcRoute()" ng-change="mapService.calcRoute()" Required/>
                 </md-input-container>
                 
                 <md-input-container>
                     <label>to:</label>
-                    <input type="text" options="options2" ng-model="mapService.end_loc" ng-autocomplete="mapService.end_loc" ng-mouseenter="mapService.calcRoute()" ng-change="mapService.calcRoute()" required/>
+                    <input type="text" options="options2" ng-model="mapService.end_loc" ng-autocomplete="mapService.end_loc" ng-model-options="modelOptions" ng-mouseenter="mapService.calcRoute()" ng-change="mapService.calcRoute()" required/>
                 </md-input-container>
                 <md-input-container>
-                    <label>Date:</label>
-                    <input ui-date="dateOptions" ng-model="currentdate" min="currentdate" placeholder='MM/DD/YYY' Required/>
+                    <div class="col-lg-1"><label>Date:</label>
+                    <input ui-date="dateOptions" ng-model="currentdate" min-date="03/22/2015" placeholder='MM/DD/YYY' Required/></div>
                 </md-input-container>
                 <b>can a moving truck park outside your house?</b>   
             </md-content>    
@@ -36,18 +36,19 @@
             <md-content md-theme="docs-dark" class="md-padding" layout-sm="column" style="font-size:1.1em">
                 <md-input-container>
                     <label>zipcode:</label>
-                    <input placeholder="zip-code" ng-model="zipfrom" md-maxlength="6" minlength="6" Required/>
+                    <input placeholder="zip-code" ng-model="zipfrom" maxlength="6" minlength="6" Required/>
                 </md-input-container>
                 <md-input-container>
                     <label>zipcode:</label>
-                    <input type="text" placeholder="zip-code" ng-model="zipto" md-maxlength="6" minlength="6" Required/>
+                    <input type="text" placeholder="zip-code" ng-model="zip" maxlength="6" minlength="6" Required/>
                 </md-input-container>  
             </md-content>
         </div>
         <div class="col-md-5">
             <div id="map-canvas"></div>
-            <b ng-cloak>Total Distance: {{distance}}</b>
+            <b ng-cloak>Total Distance: {{mapService.calcRoute().distance}}</b><b ng-bind="mapService.distance"></b>
             <b ng-cloak>Total Distance: {{mapService.end_loc}}</b>
         </div>
     </div>
+    <input type="text" datepicker-popup="yyyy-MM-dd" ng-model="dt" min="currentdate" />
 </div>
