@@ -6,7 +6,6 @@
     "angular-route": "latest",
     "angular-material": "latest",
     "angular-ui-date": "latest",
-    "angular-ui-map": "latest",
-    "angular-ui-bootstrap": "latest"
+    "angular-ui-map": "latest"
   }
 }
