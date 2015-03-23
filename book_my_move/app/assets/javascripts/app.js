@@ -142,7 +142,13 @@ bookmymove.controller('MapCtrl', ['$scope','mapService', function($scope,mapServ
     $scope.mapService = mapService;
     $scope.zipfrom = '';
     $scope.zipto = '';
-    
+    $scope.modelOptions = {
+      updateOn: 'default blur',
+      debounce: {
+       blur: 10000,
+       default: 10000
+      }
+    };
     $scope.$watch('mapService',function(){
       mapService = $scope.mapService;
     });
