@@ -7,4 +7,3 @@
   asset 'angular-material'
   asset 'angular-ui-date'
   asset 'angular-ui-map'
-  asset 'angular-ui-bootstrap'
