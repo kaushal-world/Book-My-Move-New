@@ -4,11 +4,12 @@
 +	Main Menu Style
 --------------------------------------------------------------------------*/
 .mainmenu li.logo-wrapper a {
-  border-right: 1px solid #E8E8E8;
-  padding-left: 0;
-  padding-top: 0;
-  padding-bottom: 0;
+    border-right: 1px solid #E8E8E8;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
 }
+
 .mainmenu-wrapper {
   background-color: #FFF;
   border-bottom: 4px solid #009688;
@@ -179,6 +180,30 @@
 
 
 /*--------------------------------------------------------------------------
++ Registration
+--------------------------------------------------------------------------*/
+.bold_text 
+{
+    font-weight: bold;
+}
+
+.fb_tw_go_box
+{
+  margin-top: 100px;
+}
+
+.fb_tw_go_btns
+{
+margin-left: 60px;
+}
+
+
+.Registration_box
+{
+  margin-left: 100px;
+}
+
+/*--------------------------------------------------------------------------
 +	Extras Menu (Cart, Language, Login) Style
 --------------------------------------------------------------------------*/
 
@@ -230,11 +255,12 @@
 .bg_image
 {
 background: url("pattern2.png");
+background-attachment: fixed;
 }
 
 .logo
 {
-height:100px;
+height: 90px;
 width:250px;
 }
 
@@ -245,9 +271,11 @@ width:250px;
 	width:-900px;
 	background-color:#fff;
 	border-radius:15px;
-	margin-top: 100px;
+	margin-top: 70px;
 	margin-left: 30PX;
 margin-right: 30PX;
+background-attachment: local;
+
 }
 
 .left_side_img
@@ -333,7 +361,7 @@ width: 45%;
 footer
 {
 position:absolute;
-margin-bottom:600px;
+margin-top:50px;
 width:100%;
 height:200px;
 background:#ec6952;
