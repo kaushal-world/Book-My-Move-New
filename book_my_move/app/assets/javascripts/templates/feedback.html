@@ -11,13 +11,8 @@
                 </div>
             </div>
         </div>
-
 <!-- + Registration Form -->
-
 <div class="row">
-
-
-
 <!-- + Background Div -->
     <div class="bg_div">
       <!-- + Registration Form Heading -->
@@ -28,37 +23,25 @@
   </md-toolbar><!-- + End Of Registration Form heading -->
 <!-- + Sepration Div(Registration Form) -->
    <div class="col-md-8">
-
-
-
-
   <md-card>
   <md-card-content>
   
 <!-- +First Column Of Registration Form -->
    <div class="col-md-4 Registration_box">
-
   <md-content class="md-padding">
-  
-
     <form name="projectForm">
       <md-input-container>
         <label>First Name</label>
         <input  required name="fname" ng-model="project.description">
       </md-input-container>
-
-
       <md-input-container>
         <label>Email Id</label>
         <input required name="lname" ng-model="project.clientName">
       </md-input-container>
-
     <md-input-container>
                     <label>Pincode:</label>
                     <input type="text" placeholder="zip-code" ng-model="zipto" Required/>
                 </md-input-container>
-
-
 <md-select placeholder="City" ng-model="someval">
               <md-option value="2" ng-selected="selected">select</md-option>
               <md-option ng-value="city.name" ng-repeat="city in cities">{{city.name}}</md-option>
@@ -73,14 +56,7 @@
     <section layout="row" class="submit_reset_btns">
       <md-button class=" md-raised md-primary">Primary</md-button>
     </section>
-                  
-
-                
-
 </div><!-- +End Of First Column Of Registration Form -->
-
-
-
 <!-- +Second Column Of Registration Form -->
         <div class="col-md-4">
             <md-content  class="md-padding" >
@@ -93,17 +69,11 @@
                     <label>Mobile No:</label>
                     <input type="text" placeholder="zip-code" ng-model="zipto" Required/>
                 </md-input-container>  
-
-        
-
           <md-select placeholder="State" ng-model="someval">
               <md-option value="2" ng-selected="selected">select</md-option>
               <md-option ng-value="state.name" ng-repeat="state in states">{{state.name}}</md-option>
           </md-select>           
-
-
           <br> <br>    
-
                 <md-input-container>
                     <label>Username:</label>
                     <input type="text" placeholder="" ng-model="zipto" Required/>
