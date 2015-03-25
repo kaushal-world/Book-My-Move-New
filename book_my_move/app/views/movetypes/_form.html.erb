@@ -1,0 +1,29 @@
+<%= form_for(@movetype) do |f| %>
+  <% if @movetype.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@movetype.errors.count, "error") %> prohibited this movetype from being saved:</h2>
+
+      <ul>
+      <% @movetype.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :movetype_id %><br>
+    <%= f.number_field :movetype_id %>
+  </div>
+  <div class="field">
+    <%= f.label :movetype_name %><br>
+    <%= f.text_field :movetype_name %>
+  </div>
+  <div class="field">
+    <%= f.label :movetype_desc %><br>
+    <%= f.text_field :movetype_desc %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

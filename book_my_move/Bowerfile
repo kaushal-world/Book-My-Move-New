@@ -6,4 +6,7 @@
   asset 'angular-route'
   asset 'angular-material'
   asset 'angular-ui-date'
+
   asset 'angular-ui-map'
+
+  

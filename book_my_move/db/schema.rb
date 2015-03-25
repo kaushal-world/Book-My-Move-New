@@ -11,6 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20150323071707) do
+
+  create_table "movetypes", force: :cascade do |t|
+    t.integer  "movetype_id",   limit: 4
+    t.string   "movetype_name", limit: 255
+    t.string   "movetype_desc", limit: 255
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
 
 end

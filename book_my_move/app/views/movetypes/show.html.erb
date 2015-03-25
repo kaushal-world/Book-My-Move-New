@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Movetype:</strong>
+  <%= @movetype.movetype_id %>
+</p>
+
+<p>
+  <strong>Movetype name:</strong>
+  <%= @movetype.movetype_name %>
+</p>
+
+<p>
+  <strong>Movetype desc:</strong>
+  <%= @movetype.movetype_desc %>
+</p>
+
+<%= link_to 'Edit', edit_movetype_path(@movetype) %> |
+<%= link_to 'Back', movetypes_path %>

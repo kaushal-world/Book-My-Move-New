@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Movetypes</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Movetype</th>
+      <th>Movetype name</th>
+      <th>Movetype desc</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @movetypes.each do |movetype| %>
+      <tr>
+        <td><%= movetype.movetype_id %></td>
+        <td><%= movetype.movetype_name %></td>
+        <td><%= movetype.movetype_desc %></td>
+        <td><%= link_to 'Show', movetype %></td>
+        <td><%= link_to 'Edit', edit_movetype_path(movetype) %></td>
+        <td><%= link_to 'Destroy', movetype, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Movetype', new_movetype_path %>
